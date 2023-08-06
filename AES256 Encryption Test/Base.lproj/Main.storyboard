@@ -16,56 +16,63 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="text to encrypt" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Eig-nT-BoC">
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="text to encrypt" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Eig-nT-BoC">
                                 <rect key="frame" x="30" y="124" width="332" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="b92-qA-eHF"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="encrypt secret key" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Kdd-GR-f7P">
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="encrypt secret key" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Kdd-GR-f7P">
                                 <rect key="frame" x="30" y="185" width="332" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="e6c-m1-5we"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Encrypted Text" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z80-yI-649">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Encrypted Text" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z80-yI-649">
                                 <rect key="frame" x="30" y="244" width="332" height="79"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="text to decrypt" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pu3-EK-h7G">
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="text to decrypt" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pu3-EK-h7G">
                                 <rect key="frame" x="30" y="353" width="332" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="iyJ-Tq-sf9"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="decrypt secret key" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wGg-uC-UNt">
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="decrypt secret key" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wGg-uC-UNt">
                                 <rect key="frame" x="30" y="409" width="332" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="aSi-zd-tzW"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Decrypted Text" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t5t-sb-U79">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Decrypted Text" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t5t-sb-U79">
                                 <rect key="frame" x="30" y="480" width="332" height="79"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MYU-Xx-Dqu">
-                                <rect key="frame" x="30" y="616" width="109" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MYU-Xx-Dqu">
+                                <rect key="frame" x="71" y="614" width="109" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="109" id="O8l-tV-nMK"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Encrypt"/>
                                 <connections>
-                                    <action selector="goClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EeN-15-3GL"/>
+                                    <action selector="encryptClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HWe-UB-Ej3"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oAb-Ed-QyP">
-                                <rect key="frame" x="221" y="615" width="117" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oAb-Ed-QyP">
+                                <rect key="frame" x="215" y="614" width="117" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Decrypt"/>
                                 <connections>
@@ -75,6 +82,34 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="z80-yI-649" firstAttribute="trailing" secondItem="pu3-EK-h7G" secondAttribute="trailing" id="71g-yX-oI4"/>
+                            <constraint firstItem="pu3-EK-h7G" firstAttribute="top" secondItem="z80-yI-649" secondAttribute="bottom" constant="30" id="7rE-Iq-iTA"/>
+                            <constraint firstItem="t5t-sb-U79" firstAttribute="top" secondItem="wGg-uC-UNt" secondAttribute="bottom" constant="37" id="8xU-ZC-G75"/>
+                            <constraint firstItem="Eig-nT-BoC" firstAttribute="leading" secondItem="Kdd-GR-f7P" secondAttribute="leading" id="94g-Oe-tvN"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="oAb-Ed-QyP" secondAttribute="trailing" constant="61" id="H6L-aD-Zd0"/>
+                            <constraint firstItem="z80-yI-649" firstAttribute="leading" secondItem="pu3-EK-h7G" secondAttribute="leading" id="HM2-qZ-mep"/>
+                            <constraint firstItem="Eig-nT-BoC" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="65" id="IXa-o5-HLY"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="MYU-Xx-Dqu" secondAttribute="bottom" constant="169" id="M4p-M3-pjV"/>
+                            <constraint firstItem="wGg-uC-UNt" firstAttribute="leading" secondItem="t5t-sb-U79" secondAttribute="leading" id="NdC-Ho-Vz8"/>
+                            <constraint firstItem="MYU-Xx-Dqu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="71" id="PkS-1l-cdD"/>
+                            <constraint firstItem="Kdd-GR-f7P" firstAttribute="top" secondItem="Eig-nT-BoC" secondAttribute="bottom" constant="27" id="QUl-fE-yt5"/>
+                            <constraint firstItem="Kdd-GR-f7P" firstAttribute="leading" secondItem="z80-yI-649" secondAttribute="leading" id="Z3G-o0-6LQ"/>
+                            <constraint firstItem="oAb-Ed-QyP" firstAttribute="leading" secondItem="MYU-Xx-Dqu" secondAttribute="trailing" constant="35" id="c5v-ud-8XK"/>
+                            <constraint firstItem="Eig-nT-BoC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cdB-NU-teH"/>
+                            <constraint firstItem="Kdd-GR-f7P" firstAttribute="trailing" secondItem="z80-yI-649" secondAttribute="trailing" id="dIx-mS-RT5"/>
+                            <constraint firstItem="MYU-Xx-Dqu" firstAttribute="top" secondItem="t5t-sb-U79" secondAttribute="bottom" constant="55" id="fBn-fz-deh"/>
+                            <constraint firstItem="oAb-Ed-QyP" firstAttribute="baseline" secondItem="MYU-Xx-Dqu" secondAttribute="firstBaseline" id="mcT-Ty-8Dm"/>
+                            <constraint firstItem="Eig-nT-BoC" firstAttribute="trailing" secondItem="Kdd-GR-f7P" secondAttribute="trailing" id="mrG-xD-cTu"/>
+                            <constraint firstItem="wGg-uC-UNt" firstAttribute="trailing" secondItem="t5t-sb-U79" secondAttribute="trailing" id="ng1-Nc-IrC"/>
+                            <constraint firstItem="pu3-EK-h7G" firstAttribute="leading" secondItem="wGg-uC-UNt" secondAttribute="leading" id="nvU-Zu-3Gp"/>
+                            <constraint firstItem="MYU-Xx-Dqu" firstAttribute="baseline" secondItem="oAb-Ed-QyP" secondAttribute="baseline" id="sya-uQ-AxI"/>
+                            <constraint firstItem="wGg-uC-UNt" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="tX9-M3-EcC"/>
+                            <constraint firstItem="wGg-uC-UNt" firstAttribute="top" secondItem="pu3-EK-h7G" secondAttribute="bottom" constant="22" id="tgG-kS-E6Z"/>
+                            <constraint firstItem="Eig-nT-BoC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="tnx-OV-P9O"/>
+                            <constraint firstItem="pu3-EK-h7G" firstAttribute="trailing" secondItem="wGg-uC-UNt" secondAttribute="trailing" id="wEC-f8-mUl"/>
+                            <constraint firstItem="z80-yI-649" firstAttribute="top" secondItem="Kdd-GR-f7P" secondAttribute="bottom" constant="25" id="yQk-Hi-PdS"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="decryptSecretKey" destination="wGg-uC-UNt" id="cih-V8-UER"/>
